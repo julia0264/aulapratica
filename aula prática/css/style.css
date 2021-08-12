@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #818181;
+}
+.container{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw; 
+    justify-content: center;
+    align-content: start;
+    grid-gap: 1vw;
+}
+.container-flex{
+    display: flex;
+}
+
+h1{
+    grid-column: span 6;
+    padding-top: 15vh;
+    margin-left: 1.5vw;
+}
+#logo{
+    grid-column: 3/5;
+}
+#logo img{
+    width: 30vw;
+    margin-top: 2vh;
+}
+nav{
+    width: 100vw;
+    grid-column: span 6;
+    
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    padding: 0 1.5vw 0 1.5vw;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+header{
+    width: 100vw;
+    height: 15vh;
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f6f6;
+}
+section{
+    width: 100vw;
+    min-height: 60vh;
+    
+}
+section div{
+    grid-column: span 6;
+    margin-top: 4vh;
+    
+}
+#sobre div{
+    padding: 0 3vw 0 3vw;
+}
+#sobre div div{
+    float: left;
+    width: 50%;
+    align-self: flex-end
+    
+}
+#sobre div div img{
+    width: 100%;
+    border: black 1px solid;
+}
+#sobre{
+    letter-spacing: 1px;
+    line-height: 20px; 
+}
+#sobre div p{
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 2;
+}
+
+#cursos div img {
+    width:100%;
+}
+
+#cursos div h2{
+    background-color:#ddd;
+    text-align: Center;
+    padding:2vh 0 2vh 0;
+}
+#curso-wd{
+    
+    border-top:2vh solid#f00;
+}
+
+#curso-prog{
+    
+    border-top:2vh solid#0f0;
+
+}
+#curso-bd{
+     
+    border-top:2vh solid#00f;
+}
+
+#planos div{
+    width: 100%;
+    padding: 2vh 0 2vh 0;
+    
+
+}
+#planos div h2{
+    background-color: #eee8e8;
+    text-align: center;
+    width: 95%;
+    margin-left: 2.5%;
+    border: 1px solid black
+}
+#planos div strong{
+    font-size: 22px;
+    margin-left: 2.5% ;
+}
+#planos div p{
+    margin-left:1vw;
+    font-size: 22px;
+    
+    
+    line-height: 2;
+}
+#planos #info{
+    background-color: #fff;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+#planos-bronze{
+    background-color: #c59b12;
+}
+#planos-prata{
+    background-color: #f7f0f1;
+}
+#planos-ouro{
+    background-color: #f1f115;
+}
+
+
+@media only screen and (min-width: 980px){
+    #logo{
+        grid-column: 1/2;
+    }
+    #logo img{
+        width: 10vw;
+    }
+    nav{
+        grid-column: 5/6;
+        margin-top: 5vh;
+    }
+    section div{
+        grid-column: span 2;
+    }
+    #sobre div{
+        grid-column: span 3;
+    }
+
+    #cursos{
+        display:flex;
+    }
+    #cursos div{
+        align-self: flex-end;
+        width: 30%;
+    }
+    #planos{
+        display: flex;
+    }
+    #planos div{
+        align-self: flex-end;
+        width: 30%;
+    }
+    
+    
+
+    
+}
